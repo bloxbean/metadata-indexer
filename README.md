@@ -39,10 +39,20 @@ Other Yaci Store specific configuration properties can configured in config/appl
 
 1. **Configure a network**
 
+Select a network from the list of public networks or provide your own custom network details.
+
 ```
 store.cardano.host=preprod-node.world.dev.cardano.org
 store.cardano.port=30000
 store.cardano.protocol-magic=1
+```
+
+**Note:** For **Devnet** created using [Yaci DevKit](https://github.com/bloxbean/yaci-devkit), you can use the following configuration.
+
+```
+store.cardano.host=localhost
+store.cardano.port=3001
+store.cardano.protocol-magic=42
 ```
 
 2. **Configure a database (By default it uses H2 database)**
