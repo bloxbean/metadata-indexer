@@ -114,6 +114,13 @@ Ideally you don't need to have your own custom processor, but if you want to do 
 both core or derive events and do your custom processing.
 Please check ``CustomMetadataProcessor`` class for an example.
 
+### Rollback Handling
+If you are using default storage implementation or a custom storage by extending default Metadata storage,
+Yaci Store will automatically handle rollbacks.
+
+But if you have your own custom processor or different storage implementation using separate database/table,
+you need to handle rollbacks in your custom processor by listening to ``RollbackEvent``.
+
 ### Build and Run
 
 #### Prerequisites
