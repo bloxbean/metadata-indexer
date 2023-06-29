@@ -1,6 +1,7 @@
 ## Metada Indexer using Yaci Store Spring Boot Starter
 
 This a simple example of a metadata indexer using [Yaci Store](https://github.com/bloxbean/yaci-store) Spring Boot Starter.
+Using this indexer, you can index all metadata labels. You can also customize the indexer to index only specific metadata labels.
 
 ### Dependencies
 
@@ -61,6 +62,19 @@ store.cardano.sync-start-slot=2738868
 store.cardano.sync-start-blockhash=a5c72a0e74cf066873ae7741c488acaef32746e1c4ac3b0d49c4acf4add1a47c
 ```
 
+**For custom network & non-genesis block as start block**
+
+When you start the application from **a non-genesis block** on **a custom network**, Yaci Store needs to know the Shelley era start block detail. This is requried to calculate
+the era information correctly. You can configure the Shelley era start block as follows if it's a custom network and you are starting from a
+non-genesis block.
+For public networks, Yaci Store automatically detects the following information.
+
+```shell
+store.cardano.shelley-start-blockhash= 
+store.cardano.shelley-start-slot:
+store.cardano.shelley-start-block: 
+```
+
 ### Out-of-box API endpoints
 
 **Swagger UI:**  http://localhost:9095/swagger-ui.html
@@ -86,3 +100,16 @@ To use this custom storage implementation, you need uncomment ``@Component`` ann
 Ideally you don't need to have your own custom processor, but if you want to do some custom processing, you can listen to
 both core or derive events and do your custom processing.
 Please check ``CustomMetadataProcessor`` class for an example.
+
+### Build and Run
+
+#### Prerequisites
+
+Java 17
+
+```
+./mvnw clean package
+java -jar target/metdata-indexer-0.0.1-SNAPSHOT.jar
+```
+
+```
