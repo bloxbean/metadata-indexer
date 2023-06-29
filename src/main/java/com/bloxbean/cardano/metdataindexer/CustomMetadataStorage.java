@@ -1,4 +1,4 @@
-package com.bloxbean.example.metdataindexer;
+package com.bloxbean.cardano.metdataindexer;
 
 import com.bloxbean.cardano.yaci.store.metadata.domain.TxMetadataLabel;
 import com.bloxbean.cardano.yaci.store.metadata.storage.impl.jpa.MetadataMapper;

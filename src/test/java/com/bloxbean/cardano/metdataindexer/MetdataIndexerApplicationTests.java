@@ -1,4 +1,4 @@
-package com.bloxbean.example.metdataindexer;
+package com.bloxbean.cardano.metdataindexer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

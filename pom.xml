@@ -8,7 +8,7 @@
         <version>3.1.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.bloxbean.example</groupId>
+    <groupId>com.bloxbean.cardano</groupId>
     <artifactId>metdata-indexer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>metdata-indexer</name>
