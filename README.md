@@ -81,8 +81,8 @@ For public networks, Yaci Store automatically detects the following information.
 
 ```shell
 store.cardano.shelley-start-blockhash= 
-store.cardano.shelley-start-slot:
-store.cardano.shelley-start-block: 
+store.cardano.shelley-start-slot=
+store.cardano.shelley-start-block= 
 ```
 
 ### Out-of-box API endpoints
@@ -91,11 +91,13 @@ store.cardano.shelley-start-block:
 
 Currently, Yaci Store Metadata Spring Boot Starter provides following API endpoints:
 
+```
 - /api/v1/txs/{txHash}/metadata : Get metadata for a transaction
+```
 
 But, you can add your own API endpoints by writing a controller class.
 
-More endpoints will be added to the default store in the future.
+**More endpoints will be added to the default metadata store in the future.**
 
 ### Custom Storage
 
