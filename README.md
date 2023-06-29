@@ -1,4 +1,4 @@
-## Metada Indexer using Yaci Store Spring Boot Starter
+## Metadata Indexer using Yaci Store Spring Boot Starter
 
 This a simple example of a metadata indexer using [Yaci Store](https://github.com/bloxbean/yaci-store) Spring Boot Starter.
 Using this indexer, you can index all metadata labels. You can also customize the indexer to index only specific metadata labels.
