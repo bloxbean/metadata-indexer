@@ -84,11 +84,12 @@ Currently, Yaci Store Metadata Spring Boot Starter provides following API endpoi
 - /api/v1/txs/{txHash}/metadata : Get metadata for a transaction
 
 But, you can add your own API endpoints by writing a controller class.
+
 More endpoints will be added to the default store in the future.
 
 ### Custom Storage
 
-Yaci Store provides a default metadata storage implementation which stores all metadata labels in transaction_metadata table.
+Yaci Store provides a default metadata storage implementation which stores all metadata labels in ``transaction_metadata`` table.
 But you can override this default implementation and provide your own storage implementation.
 
 **For example:**
@@ -110,6 +111,4 @@ Java 17
 ```
 ./mvnw clean package
 java -jar target/metdata-indexer-0.0.1-SNAPSHOT.jar
-```
-
 ```
