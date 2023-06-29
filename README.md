@@ -32,7 +32,7 @@ spring:
 
 apiPrefix: /api/v1
 ```
-Other Yaci Store specific configuration properties can configured in config/application.properties or in application.yml.
+Other Yaci Store specific configuration properties can be configured in config/application.properties or in application.yml.
 
 #### Some key configuration properties
 **File:** ``config/application.properties``
