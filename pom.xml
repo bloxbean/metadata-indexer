@@ -30,14 +30,14 @@
         <dependency>
             <groupId>com.bloxbean.cardano</groupId>
             <artifactId>yaci-store-spring-boot-starter</artifactId>
-            <version>0.0.10</version>
+            <version>0.0.11-beta4</version>
         </dependency>
 
         <!-- Yaci Store metadata spring boot starter -->
         <dependency>
             <groupId>com.bloxbean.cardano</groupId>
             <artifactId>yaci-store-metadata-spring-boot-starter</artifactId>
-            <version>0.0.10</version>
+            <version>0.0.11-beta4</version>
         </dependency>
 
         <!-- Add mysql or H2 or Postgres dependency based on your database -->
