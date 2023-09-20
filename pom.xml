@@ -30,14 +30,14 @@
         <dependency>
             <groupId>com.bloxbean.cardano</groupId>
             <artifactId>yaci-store-spring-boot-starter</artifactId>
-            <version>0.0.11-beta4</version>
+            <version>0.0.12</version>
         </dependency>
 
         <!-- Yaci Store metadata spring boot starter -->
         <dependency>
             <groupId>com.bloxbean.cardano</groupId>
             <artifactId>yaci-store-metadata-spring-boot-starter</artifactId>
-            <version>0.0.11-beta4</version>
+            <version>0.0.12</version>
         </dependency>
 
         <!-- Add mysql or H2 or Postgres dependency based on your database -->
@@ -45,6 +45,13 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.5.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.28</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
