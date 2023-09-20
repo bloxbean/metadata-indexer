@@ -11,12 +11,12 @@ Apart from standard spring boot dependencies, this project has following depende
 <dependency>
     <groupId>com.bloxbean.cardano</groupId>
     <artifactId>yaci-store-spring-boot-starter</artifactId>
-    <version>0.0.10</version>
+    <version>0.0.12</version>
 </dependency>
 <dependency>
     <groupId>com.bloxbean.cardano</groupId>
     <artifactId>yaci-store-metadata-spring-boot-starter</artifactId>
-    <version>0.0.10</version>
+    <version>0.0.12</version>
 </dependency>
 ```
 ### Configuration
@@ -27,7 +27,7 @@ In application.yml, you need to provide the following **mandatory** flyway confi
 ```yaml
 spring:
   flyway:
-    locations: classpath:db/migration/{vendor}
+    locations: classpath:db/store/{vendor}
     out-of-order: true
 
 apiPrefix: /api/v1
