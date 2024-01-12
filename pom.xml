@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.1</version>
+        <version>3.2.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.bloxbean.cardano</groupId>
@@ -14,7 +14,8 @@
     <name>metdata-indexer</name>
     <description>metdata-indexer</description>
     <properties>
-        <java.version>17</java.version>
+        <java.version>21</java.version>
+        <yaci-store.version>0.1.0-rc1</yaci-store.version>
     </properties>
     <dependencies>
         <dependency>
@@ -30,14 +31,14 @@
         <dependency>
             <groupId>com.bloxbean.cardano</groupId>
             <artifactId>yaci-store-spring-boot-starter</artifactId>
-            <version>0.0.12</version>
+            <version>${yaci-store.version}</version>
         </dependency>
 
         <!-- Yaci Store metadata spring boot starter -->
         <dependency>
             <groupId>com.bloxbean.cardano</groupId>
             <artifactId>yaci-store-metadata-spring-boot-starter</artifactId>
-            <version>0.0.12</version>
+            <version>${yaci-store.version}</version>
         </dependency>
 
         <!-- Add mysql or H2 or Postgres dependency based on your database -->

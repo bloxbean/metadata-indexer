@@ -1,9 +1,9 @@
 package com.bloxbean.cardano.metdataindexer;
 
 import com.bloxbean.cardano.yaci.store.metadata.domain.TxMetadataLabel;
-import com.bloxbean.cardano.yaci.store.metadata.storage.impl.jpa.MetadataMapper;
-import com.bloxbean.cardano.yaci.store.metadata.storage.impl.jpa.TxMetadataStorageImpl;
-import com.bloxbean.cardano.yaci.store.metadata.storage.impl.jpa.repository.TxMetadataLabelRepository;
+import com.bloxbean.cardano.yaci.store.metadata.storage.impl.TxMetadataStorageImpl;
+import com.bloxbean.cardano.yaci.store.metadata.storage.impl.mapper.MetadataMapper;
+import com.bloxbean.cardano.yaci.store.metadata.storage.impl.repository.TxMetadataLabelRepository;
 
 import java.util.List;
 
